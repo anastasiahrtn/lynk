@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting you in a moment...</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="..\site_icon.png">
+
+</head>
+    <body>
+        <div id="revealBox" class="black-box"></div>
+
+        <img src="../iconnnn.png" alt="cat" class="face" id="cat-face">
+
+        <div id="closeBox" class="black-box close-start"></div>
+
+
+
+    <script>
+        window.addEventListener("load", () => {
+            const revealBox = document.getElementById("revealBox");
+            const closeBox = document.getElementById("closeBox");
+            const catFace = document.getElementById("cat-face");
+
+            // Reveal page
+            revealBox.classList.add("reveal-animation");
+
+            // First blink
+            setTimeout(() => {
+                catFace.src = "../blinkkkk.png";
+            }, 1200);
+
+            setTimeout(() => {
+                catFace.src = "../iconnnn.png";
+            }, 1500);
+
+            // Second blink
+            setTimeout(() => {
+                catFace.src = "../blinkkkk.png";
+            }, 1900);
+
+            setTimeout(() => {
+                catFace.src = "../iconnnn.png";
+            }, 2100);
+
+            // Close animation after blinking
+            setTimeout(() => {
+                closeBox.classList.add("close-animation");
+            }, 2500);
+        });
+
+        setTimeout(() => {
+            window.location.href = "https://anastasiahrtn.github.io/portfolio/projects/01-ayo-berantas-judol/";
+        }, 3200);
+    </script>
+</body>
+</html>

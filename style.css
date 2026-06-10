@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+}
+
+.black-box {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    z-index: 1000;
+    transition: transform 1s ease;
+}
+
+#revealBox {
+    left: 0;
+}
+
+.close-start {
+    left: 100%;
+}
+
+.reveal-animation {
+    transform: translateX(-100%);
+}
+
+.close-animation {
+    transform: translateX(-100%);
+}
+
+
+
+.face {
+    position: relative;
+    width: 400px;
+}
